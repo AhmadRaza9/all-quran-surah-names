@@ -39,20 +39,20 @@ resetAllButton.addEventListener("click", function () {
 });
 
 
-window.addEventListener("load", function () {
-  let filter = document.getElementById("searchBox");
+// window.addEventListener("load", function () {
+//   let filter = document.getElementById("searchBox");
 
-  filter.addEventListener("keyup", function () {
-    var search = this.value.toLowerCase();
-    var items = document.querySelectorAll("ul li");
+//   filter.addEventListener("keyup", function () {
+//     var search = this.value.toLowerCase();
+//     var items = document.querySelectorAll("ul li");
 
-    for (let item of items) {
-      let singleItem = item.innerHTML.toLowerCase();
-      if (singleItem.indexOf(search) == -1) {
-        item.classList.add("hide");
-      } else {
-        item.classList.remove("hide");
-      }
-    }
-  });
-});
+//     for (let item of items) {
+//       let singleItem = item.innerHTML.toLowerCase();
+//       if (singleItem.indexOf(search) == -1) {
+//         item.classList.add("hide");
+//       } else {
+//         item.classList.remove("hide");
+//       }
+//     }
+//   });
+// });

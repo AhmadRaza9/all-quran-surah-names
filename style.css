@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Lateef";
+  src: url("./fonts/Lateef.woff2") format("woff2"),
+    url("./fonts/Lateef.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: cursive;
   background-color: #f5f5f5;
@@ -33,7 +42,7 @@ button:hover {
   opacity: 0.8;
 }
 
-input#searchBox {
+/* input#searchBox {
   flex-basis: 100%;
   padding: 15px 10px;
   box-shadow: 0px 0px 20px 0px lightgray;
@@ -41,7 +50,7 @@ input#searchBox {
   margin-bottom: 50px;
   border-radius: 5px;
   font-size: 16px;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -102,8 +111,10 @@ ul li.hide {
 }
 
 .surah-name {
+  font-family: "Lateef";
   flex: 1;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .urdu-trans {
