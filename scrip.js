@@ -1,4 +1,4 @@
-const resetAllButton = document.querySelector("button");
+const resetAllButton = document.querySelector(".button");
 const checkboxes = document.querySelectorAll(".checkbox-input");
 
 // Load the checkbox state from localStorage
@@ -37,7 +37,6 @@ resetAllButton.addEventListener("click", function () {
   localStorage.clear();
   window.location.reload();
 });
-
 
 // window.addEventListener("load", function () {
 //   let filter = document.getElementById("searchBox");
