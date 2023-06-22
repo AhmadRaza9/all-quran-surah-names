@@ -38,20 +38,14 @@ resetAllButton.addEventListener("click", function () {
   window.location.reload();
 });
 
-// window.addEventListener("load", function () {
-//   let filter = document.getElementById("searchBox");
+const urduTranlationLinks = document.querySelectorAll(".urdu-translation");
 
-//   filter.addEventListener("keyup", function () {
-//     var search = this.value.toLowerCase();
-//     var items = document.querySelectorAll("ul li");
+urduTranlationLinks.forEach((e) => {
+  e.addEventListener("click", function (event) {
+    event.preventDefault();
 
-//     for (let item of items) {
-//       let singleItem = item.innerHTML.toLowerCase();
-//       if (singleItem.indexOf(search) == -1) {
-//         item.classList.add("hide");
-//       } else {
-//         item.classList.remove("hide");
-//       }
-//     }
-//   });
-// });
+    var videoUrl = e.getAttribute("href");
+    var popup = window.open(videoUrl, "popup", "width=600,height=400");
+    popup.focus();
+  });
+});
